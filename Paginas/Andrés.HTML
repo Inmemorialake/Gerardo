@@ -11,20 +11,23 @@ function icfes()
     var B1;
     var C1;
     var D1;
+    var suma;
+    suma=0;
     A1=document.getElementById("A1").value;
     B1=document.getElementById("B1").value;
     C1=document.getElementById("C1").value;
     D1=document.getElementById("D1").value; 
     if((C1=="X" || C1=="x") && (A1!="X" && A1!="x") && (B1!="X" && B1!="x") && (D1!="X" && D1!="x"))
     {
-        document.getElementById("RESULTADO").value=1;
+suma=suma+1;
 
     }
     else
     {
-        document.getElementById("RESULTADO").value=0;
+
 
     } 
+    document.getElementById(RESULTADO).value=suma;
 }
 </Script> 
 <Body bgCOLOR="#00304E">
@@ -72,7 +75,7 @@ GONZALEZ ROSERO ANDRÉS GERARDO
 </TR>
 <p></p>
 </TABLE>
-<input type="BUTTON" value="ACEPTAR" Onclick="icfes()"><P></P>
+<P><input type="BUTTON" value="ACEPTAR" Onclick="icfes()"></P>
 <FONT SIZE="3" COLOR="FFFFFF">
 Su calificación es: 
 <input type="text" name="RESULTADO" id="RESULTADO">
